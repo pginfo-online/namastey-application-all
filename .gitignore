@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build output and tooling
+dist/
+web-build/
+.expo/
+.vercel/
+coverage/
+.DS_Store
+*.log
+
+# Native signing credentials
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem

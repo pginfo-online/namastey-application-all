@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "Namastey",
+    "slug": "namastey",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "namastey",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.worknai.namasteyyy",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Namastey needs access to your camera to take profile photos and scan QR codes.",
+        "NSPhotoLibraryUsageDescription": "Namastey needs access to your photos to let you choose a profile picture.",
+        "NSPhotoLibraryAddUsageDescription": "Namastey needs access to save photos to your library."
+      }
+    },
+    "android": {
+      "package": "com.worknai.namasteyyy",
+      "versionCode": 3,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ],
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "owner": "worknai",
+    "extra": {
+      "eas": {
+        "projectId": "823805c0-ad3e-448a-aa0d-d35024bd06a3"
+      }
+    }
+  }
+}
